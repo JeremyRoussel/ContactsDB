@@ -26,4 +26,4 @@ CREATE TABLE contacts (
 
 Clone the front-end application and run it as well.
 
-Front-End Repository location: 
+Front-End Repository location: https://github.com/JeremyRoussel/ContactsFE
