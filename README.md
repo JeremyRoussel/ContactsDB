@@ -20,7 +20,9 @@ CREATE TABLE contacts (
  added TIMESTAMP NOT NULL
 );
 
-4. Start Server: contactsDB ~ npm start
+4. Create .env file with PORT=3001
+
+5. Start Server: contactsDB ~ npm start
 
 Clone the front-end application and run it as well.
 
