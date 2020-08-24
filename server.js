@@ -37,7 +37,7 @@ const main = require('./dbActions/main')
 // Instantiate App
 const app = express()
 
-//App Middleware for controlling DB Access, only allows port 3001 on localhost
+//App Middleware for controlling DB Access, only allows port 3000 on localhost
 const whitelist = ['http://localhost:3000']
 const corsOptions = {
     origin: function (origin, callback) {
