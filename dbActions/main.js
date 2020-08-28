@@ -18,6 +18,7 @@ const getTableData = (req, res, db) => {
     db('contacts').insert({first, last, email, phone, location, hobby, added})
       .returning('*')
       .then(item => {
+        console.log(item)
         res.json(item)
       })
       .catch(err => res.status(400).json({dbError: 'db error'}))
@@ -28,6 +29,7 @@ const getTableData = (req, res, db) => {
     db('contacts').where({id}).update({first, last, email, phone, location, hobby})
       .returning('*')
       .then(item => {
+        console.log(item)
         res.json(item)
       })
       .catch(err => res.status(400).json({dbError: 'db error'}))
